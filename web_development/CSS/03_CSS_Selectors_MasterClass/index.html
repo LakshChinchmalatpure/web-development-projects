@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        /* Element selectors */
+        div{
+            background-color: burlywood;
+        }
+
+
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+
+
+        /* Id selector */
+        #green{
+            background-color: green;
+        }
+
+        /* child Selector */
+        div > p{
+            color: blue;
+            background-color: deeppink;
+        }
+
+        /* Descendant Selector */
+        div p{
+            background-color: palevioletred;
+        }
+
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selectors */
+
+        /* link visit hogayi */
+        a:visited{
+            color: yellow
+        }
+        /* link visiot nahi huyi */
+        a:link{
+            color: chartreuse;
+        }
+        /* link pe click karne ke baad bg dikhta hai */
+        a:active{
+            background-color: darkblue;
+        }
+
+        /* link ke pass jane ke baad show hota hai */
+        a:hover{
+            background-color: tomato;
+        }
+        /* p is the first child of its parent,apply these property */
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+
+    <!--1 Element  -->
+    <div>
+        I am  a Div 
+    </div>
+
+    <!--2 Class -->
+    <div class="red">
+        I am  a Div 2
+    </div>
+
+    <!--3 Id -->
+    <div id="green">
+        I am  a Div 3
+    </div>
+
+    <!--4 child -->
+    <div>
+        <p>
+            I am  a Div 4
+        </p>
+        
+    </div>
+
+    <!--5 descendant -->
+    <div>
+        <article>
+            <p>
+                I am  a Div 5
+            </p>
+        </article>
+    </div>
+
+
+    <!-- 6  Pseudo-->
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to facebook</a>
+    
+
+</body>
+</html>
